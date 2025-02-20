@@ -3,6 +3,18 @@
 ## Overview
 This documentation outlines the structure and components of my personal website, showcasing key sections such as Home, About Me, Projects, and Contact.
 
+## Features Implemented
+- **Navigation Bar**: A responsive navigation bar with links to different sections of the website (Home, About Me, Projects, Contact).
+- **Image Display**: A section to display the user's picture.
+- **About Me Section**: Details about the user's education, experiences, skills, and interests.
+- **Projects Section**: Information about the user's projects.
+- **Contact Form**: A form for visitors to submit their contact information and messages.
+
+## Technologies Used
+- **HTML5**: Markup language for structuring the content.
+- **CSS3**: Styling language for designing the layout and appearance.
+- **Google Fonts**: External fonts to enhance typography.
+
 ## HTML Structure
 
 ### `<!DOCTYPE html>`
