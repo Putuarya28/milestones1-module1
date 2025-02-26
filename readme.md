@@ -65,3 +65,6 @@ External CSS files are linked in the `<head>` section to style the website:
 
 ### Google Fonts
 Raleway font family is imported from Google Fonts for use throughout the website.
+
+### Github Pages
+https://putuarya28.github.io/milestones1-module1/
