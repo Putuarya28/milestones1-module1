@@ -1,0 +1,961 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3e402e;
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3e402e;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:#e2e1d8;
+    overflow-x: hidden;
+    font-size: 22px;
+}
+
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container-header  {
+    background-color: #e2e1d8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+#toggle {
+    display: none;
+}
+
+
+#header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-right: 40px ;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypicture {
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+#home .title {
+    position: absolute;
+}
+
+.title img {
+    width: 50vw;
+}
+
+
+
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5em;
+    margin: 2em;
+    overflow: hidden;
+}
+
+.divider img {
+    width: 80vw;
+}
+
+.paragraf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 1rem;
+    width: 80vw;
+}
+
+#home .paragraf p {
+    text-align:justify;
+    width: 80vw;
+    z-index: 1;
+    color: rgb(160, 156, 172);
+    /* color: #ffc3c3; */
+    /* color: rgb(232, 255, 186); */
+    mix-blend-mode: difference;
+    margin-bottom: 2rem;
+}
+
+
+
+.paragraf .logo-revou img {
+    position: absolute;
+    width: 40vw;
+    right: -130px;
+    top: -50px;
+}
+
+
+
+#aboutme {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.carrousel {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	height: fit-content;
+	width: 48vw;
+	border: 1px solid #3e402e;
+	box-shadow: 5px 5px #3e402e;
+	margin: 20px auto;
+    margin-top: 2rem;
+	padding: 16px 32px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.about_container h3{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.about_container {
+	display: flex;
+    text-align: justify;
+    flex-direction: row;
+    width: fit-content;
+    padding: 0 30px;
+	margin: 20px auto;
+	margin-right: 12vw;
+	min-width: 100%;
+	overflow: hidden;
+	position: relative;
+	left: 0vw;
+	animation-name: carrousel;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes carrousel {
+	0% {
+		left: 0vw;
+		opacity: 1;
+	}
+
+	20% {
+		left: 0vw;
+		opacity: 1;
+	}
+
+	25% {
+		margin-left: -49.5vw;
+		opacity: 1;
+	}
+
+	45% {
+		left: -49.5vw;
+		opacity: 1;
+	}
+
+	50% {
+		left: -101.5vw;
+		opacity: 1;
+	}
+
+	70% {
+		left: -101.5vw;
+		opacity: 1;
+	}
+
+	75% {
+		left: -160vw;
+		opacity: 1;
+	}
+
+	95% {
+		left: -160vw;
+		opacity: 1;
+	}
+
+	97% {
+		left: -220vw;
+		opacity: 0;
+	}
+
+	97.5% {
+		left: 220vw;
+		opacity: 0;
+	}
+
+	100% {
+		left: 0vw;
+		opacity: 1;
+	}
+}
+
+
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 10% ;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    text-align: justify;
+
+}
+
+#project h2 {
+    margin: 5%
+}
+
+#project h3 {
+    margin-bottom: 2%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #3e402e;
+    color: #fff;
+    padding: 5%;
+}
+
+strong {
+    margin-top: 5%;
+}
+
+.shortline {
+    width: 80px;
+    margin: 2%;
+    padding: 0;
+}
+
+#contact form {
+    padding: 2%;
+}
+
+#contact form input {
+    width: 40vw;
+    padding: 1%;
+}
+
+#contact form textarea {
+    padding: 1%;
+    width: 40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Querries */
+
+@media (max-width: 1320px) {
+
+    .paragraf .logo-revou img {
+        position: absolute;
+        width: 40vw;
+        right: -80px;
+        top: -50px;
+    }   
+}
+
+@media (max-width: 1200px) {
+
+    .paragraf .logo-revou img {
+        position: absolute;
+        width: 40vw;
+        left: 510px;
+        margin-top: 50px;
+    }   
+
+    .carrousel {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+
+    .paragraf .logo-revou img {
+        position: absolute;
+        width: 40vw;
+        left: 425px;
+        margin-top: 50px;
+    }   
+
+    .carrousel {
+        height: fit-content;
+        margin-top: 1rem;
+    }
+
+    @keyframes carrousel {
+        0% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        20% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        25% {
+            left: -45.2vw;
+            opacity: 1;
+        }
+    
+        45% {
+            left: -45.2vw;
+            opacity: 1;
+        }
+    
+        50% {
+            left: -101.5vw;
+            opacity: 1;
+        }
+    
+        70% {
+            left: -101.5vw;
+            opacity: 1;
+        }
+    
+        75% {
+            left: -158vw;
+            opacity: 1;
+        }
+    
+        95% {
+            left: -158vw;
+            opacity: 1;
+        }
+    
+        97% {
+            left: -220vw;
+            opacity: 0;
+        }
+    
+        97.5% {
+            left: 220vw;
+            opacity: 0;
+        }
+    
+        100% {
+            left: 0vw;
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@media (max-width: 860px) {
+    html {
+        font-size: 18px;
+    }
+
+
+    .divider {
+        margin-top: 1rem;
+    }
+
+    .paragraf {
+        margin-top: -2rem; 
+    }
+    .paragraf .logo-revou img {
+        position: absolute;
+        left: 380px;
+        margin-top: 50px;
+    }   
+
+    .carrousel {
+        height: fit-content;
+    }
+
+
+    @keyframes carrousel {
+        0% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        20% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        25% {
+            left: -54vw;
+            opacity: 1;
+        }
+    
+        45% {
+            left: -54vw;
+            opacity: 1;
+        }
+    
+        50% {
+            left: -101.5vw;
+            opacity: 1;
+        }
+    
+        70% {
+            left: -101.5vw;
+            opacity: 1;
+        }
+    
+        75% {
+            left: -156vw;
+            opacity: 1;
+        }
+    
+        95% {
+            left: -156vw;
+            opacity: 1;
+        }
+    
+        97% {
+            left: -220vw;
+            opacity: 0;
+        }
+    
+        97.5% {
+            left: 220vw;
+            opacity: 0;
+        }
+    
+        100% {
+            left: 0vw;
+            opacity: 1;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    
+
+    .divider {
+        margin-top: 1rem;
+    }
+
+    .paragraf {
+        margin-top: -3rem; 
+    }
+
+    .paragraf p {
+        text-align: center;
+        width: 100vw;
+    }
+
+
+    .paragraf .logo-revou img {
+     display: none;
+    }
+
+
+    @keyframes carrousel {
+        0% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        20% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        25% {
+            left: -53.2vw;
+            opacity: 1;
+        }
+    
+        45% {
+            left: -53.2vw;
+            opacity: 1;
+        }
+    
+        50% {
+            left: -101vw;
+            opacity: 1;
+        }
+    
+        70% {
+            left: -101vw;
+            opacity: 1;
+        }
+    
+        75% {
+            left: -156vw;
+            opacity: 1;
+        }
+    
+        95% {
+            left: -156vw;
+            opacity: 1;
+        }
+    
+        97% {
+            left: -220vw;
+            opacity: 0;
+        }
+    
+        97.5% {
+            left: 220vw;
+            opacity: 0;
+        }
+    
+        100% {
+            left: 0vw;
+            opacity: 1;
+        }
+    }
+
+}
+
+
+@media (max-width: 680px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: row;
+        background-color: #e2e1d8;
+        width: 100vw;
+        height: 6vh;
+    }
+
+    .container-header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        /* margin: 20px; */
+        padding: 0;
+    }
+
+    #header-title {
+        order: 1;
+        width: fit-content;
+        padding: 0;
+        margin-right: calc(50vw - -10rem);
+        margin-top: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+
+    .hamburger {
+        position: absolute;
+        margin-left: calc(100vw - 7rem);
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        padding: 0;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    #navigasi {
+        width: 10vw;
+        height: 2vh;
+        margin: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        display: none;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    #toggle:checked ~ .hamburger {
+        transform: rotate(90deg);
+        width: 20px;
+        margin-top: 1.6rem;
+        margin-left: calc(100vw - 5rem);
+    }
+
+    #toggle:checked ~ .container-header .nav-links {
+        display: flex;
+        width: 0;
+        margin-top: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toggle:checked ~ .container-header #header-title {
+        display: none;
+    }
+
+    .divider {
+        margin-top: -1%;
+    }
+
+    .paragraf {
+        margin-top: -5rem;
+    }
+
+    #aboutme {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    
+    .carrousel {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        border: unset;
+        box-shadow: unset;
+        margin: 0;
+        margin-top: -16rem;
+        padding: 2rem;
+        overflow: hidden;
+        border-radius: 0;
+    }
+    
+    .about_container h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: -1rem auto;
+        margin-left: -1.5rem;
+    }
+    
+    .about_container {
+        display: flex;
+        text-align:justify;
+        flex-direction: column;
+        width: 100%;
+        padding: 3rem;
+        margin: -2rem auto;
+        min-width: 100%;
+        overflow: hidden;
+        position: relative;
+        left: 0vw;
+        animation-name: carrousel;
+        animation-duration:unset;
+        animation-timing-function: unset;
+        animation-iteration-count:unset;
+    }
+}
+
+    @keyframes carrousel {
+        0% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        20% {
+            left: 0vw;
+            opacity: 1;
+        }
+    
+        25% {
+            left: -51.9vw;
+            opacity: 1;
+        }
+    
+        45% {
+            left: -51.9vw;
+            opacity: 1;
+        }
+    
+        50% {
+            left: -99.3vw;
+            opacity: 1;
+        }
+    
+        70% {
+            left: -99.3vw;
+            opacity: 1;
+        }
+    
+        75% {
+            left: -153vw;
+            opacity: 1;
+        }
+    
+        95% {
+            left: -153vw;
+            opacity: 1;
+        }
+    
+        97% {
+            left: -220vw;
+            opacity: 0;
+        }
+    
+        97.5% {
+            left: 220vw;
+            opacity: 0;
+        }
+    
+        100% {
+            left: 0vw;
+            opacity: 1;
+        }
+    }
+
+
+
+@media (max-width: 425px) {
+
+    html {
+        font-size: 12px;
+    }
+
+
+    header {
+        flex-direction: row;
+        background-color: #e2e1d8;
+        width: 100vw;
+        height: 6vh;
+    }
+
+    .container-header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        /* margin: 20px; */
+        padding: 0;
+    }
+
+    #header-title {
+        order: 1;
+        width: fit-content;
+        padding: 0;
+        margin-right: calc(50vw - -10rem);
+        margin-top: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+
+    .hamburger {
+        position: absolute;
+        margin-left: calc(100vw - 7rem);
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        padding: 0;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    #navigasi {
+        width: 10vw;
+        height: 2vh;
+        margin: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        display: none;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    #toggle:checked ~ .hamburger {
+        transform: rotate(90deg);
+        width: 20px;
+        margin-top: 1.6rem;
+        margin-left: calc(100vw - 5rem);
+    }
+
+    #toggle:checked ~ .container-header .nav-links {
+        display: flex;
+        width: 0;
+        margin-top: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toggle:checked ~ .container-header #header-title {
+        display: none;
+    }
+
+
+    .paragraf {
+        margin-top: -6rem;
+    }
+    .paragraf .logo-revou img {
+        display: none;
+    }
+
+    #aboutme {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    
+    .carrousel {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        border: unset;
+        box-shadow: unset;
+        margin: 0;
+        margin-top: -16rem;
+        padding: 2rem;
+        overflow: hidden;
+        border-radius: 0;
+    }
+    
+    .about_container h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: -1rem auto;
+        margin-left: -1.5rem;
+    }
+    
+    .about_container {
+        display: flex;
+        text-align:justify;
+        flex-direction: column;
+        width: 100%;
+        padding: 3rem;
+        margin: -2rem auto;
+        min-width: 100%;
+        overflow: hidden;
+        position: relative;
+        left: 0vw;
+        animation-name: carrousel;
+        animation-duration:unset;
+        animation-timing-function: unset;
+        animation-iteration-count:unset;
+    }
+}
+
+#project {
+    margin-top: 1rem;
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        height: 5rem;
+    }
+}
