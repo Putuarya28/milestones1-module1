@@ -72,6 +72,7 @@ Here are some details of css styling used :
   }`
 - Enchancing the visibility of the paragraph with mix blend mode property `mix-blend-mode: difference;`
 - Simple carrousel inspired from Boladale Akinpelu sources : codepen.io
+- Applied of some different font family to enchanced style using a futuristic concept
 
 ### Google Fonts
 Raleway font family is imported from Google Fonts for use throughout the website.
