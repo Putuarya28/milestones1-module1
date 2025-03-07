@@ -1,6 +1,82 @@
-.raleway tesfont {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 50;
-    font-style: normal;
+html {
+  font-size: 22px;
+}
+
+.goldman-bold {
+  font-family: "Goldman", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syncopate-bold {
+  font-family: "Syncopate", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+h1 {
+  font-size: 1.8rem;
+  font-family: "syncopate", serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: #3e402e; */
   }
+
+  ul li a {
+    font-size: 0.8rem;
+    font-family: "audiowide", serif;
+    /* color: #3e402e; */
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  ul li a:hover {
+    text-shadow: 2px 2px 5px #3e402e; 
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-family: "syncopate", serif;
+    text-transform: uppercase;
+    color: azure;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    /* text-shadow: 2px 2px 5px black; */
+    text-shadow:
+        0 0 5px #ffde3d,
+        0 0 10px #ffde3d,
+        0 0 20px #3e402e,
+        0 0 40px #3e402e,
+        0 0 80px #3e402e;
+}
+
+.carrousel ol li {
+  font-size: 1rem;
+}
+
+strong, p, ol li {
+  font-family: "saira", serif;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.carrousel {
+  line-height: 3em;
+}
+
+h3 {
+  font-family: "saira", serif;
+  font-size: 1.3rem;
+  color: #3e402e;
+}
+
+
+

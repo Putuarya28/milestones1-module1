@@ -4,109 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link rel="stylesheet" href="CSS/Base/global.css">
-    <link rel="stylesheet" href="CSS/Layout/layout.css">
-    <link rel="stylesheet" href="CSS/Components/forms.css">
-    <link rel="stylesheet" href="CSS/Font/font.css">
+    <link rel="stylesheet" href="css/base/global.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+    <link rel="stylesheet" href="css/font/font.css">
+    <link rel="stylesheet" href="css/layout/layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Goldman:wght@400;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="hamburger">&#9776;</label>
+        
+        <div class="container-header">
+            <h1 id="header-title">Putu Arya <br>Wibawa</h1>
+
+            <nav id="navigasi">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-
-        <div class="container">
-            <img class="mypicture" src="asset/IMG_4103.JPG" alt="Putu Arya Wibawa">
-        </div>
-
         <section id="home">
-            <h1>Putu Arya Wibawa</h1>
-            <h2 class="profession"><span>Software Engineer Student</span></h2>
-            <p>I am currently a student at RevoU, where I am training to become a software engineer. The Software Engineering course at RevoU is a comprehensive bootcamp designed to equip students with the essential skills and knowledge needed to excel in the field of software development. Throughout the course, students engage in hands-on learning experiences, covering topics such as HTML, CSS, JavaScript, Git, version control, and various web development tools and techniques. The curriculum is tailored to provide a solid foundation in software engineering principles, ensuring students are well-prepared to tackle real-world challenges and build successful careers in the tech industry.</p>
+            
+            <div class="hero">
+                <img class="mypicture" src="asset/IMG_4103.JPG" alt="Putu Arya Wibawa">
+                <div class="title">
+                    <img src="asset/1.svg">
+                </div>
+            </div>
+
+            <div class="divider">
+                <img src="asset/Untitled design (1).svg">
+            </div>
+            
+            <div class="paragraf">
+                <p>I am currently a student at RevoU, where I am training to become a software engineer. The Software Engineering course at RevoU is a comprehensive bootcamp designed to equip students with the essential skills and knowledge needed to excel in the field of software development. Throughout the course, students engage in hands-on learning experiences, covering topics such as HTML, CSS, JavaScript, Git, version control, and various web development tools and techniques. The curriculum is tailored to provide a solid foundation in software engineering principles, ensuring students are well-prepared to tackle real-world challenges and build successful careers in the tech industry. <br><br>
+                Although my background is not related to this course, I am confident that I can complete it successfully and transform my career someday. This is my first step towards obtaining my dream job.</p>
+
+                <div class="logo-revou">
+                    <img src="asset/logo-revou.png">
+                </div>
+                
+            </div>
+            
         </section>
 
-        <hr class="divider">
-
         <section id="aboutme">
-            <!-- <h2>About Me</h2> -->            
-            <div class="flexabout">
-                <div class="education">
-                    <h3>Education</h3>
-                    <ol>
-                        <li>
-                            <strong>Hotel Acommodation</strong> - Triatma Jaya Vocational High School (2016 - 2019)</h4>
-                        </li>
-                        <li><strong>Software Engineer</strong> - RevoU</li>
-                    </ol>
+            <div class="carrousel">
+                <div class="about_container">
+                    <div class="education">
+                        <h3>Education</h3>
+                        <ol>
+                            <li>
+                                <strong>Hotel Acommodation</strong> - Triatma Jaya Vocational High School (2016 - 2019)</h4>
+                            </li>
+                            <li><strong>Software Engineer</strong> - RevoU</li>
+                        </ol>
+                    </div>
                 </div>
-                <div class="experiences">
-                    <h3>Experiences</h3>
-                    <ol>
-                        <li><strong>Waiter</strong> - Livingstone Cafe & Bakery (2019 - 2020)</li>
-                        <li><strong>Barista</strong> - Downtime Board Game Cafe (2021 - 2022)</li>
-                        <li><strong>Barista & Roaster Assistant</strong> - Twenty Milli Coffee & Roastery (2023 - 2024)</li>
-                        <li><strong>Barista</strong> - The Ritz Carlton Doha (2024 - present)</li>
-                    </ol>
-                </div>
-
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <ol>
-                        <li><strong>HTML</strong> - Beginner</li>
-                        <li><strong>CSS</strong> - Beginner</li>
-                    </ol>
+                <div class="about_container">
+                    <div class="experiences">
+                        <h3>Experiences</h3>
+                        <ol>
+                            <li><strong>Waiter</strong> - Livingstone Cafe & Bakery (2019 - 2020)</li>
+                            <li><strong>Barista</strong> - Downtime Board Game Cafe (2021 - 2022)</li>
+                            <li><strong>Barista & Roaster Assistant</strong> - Twenty Milli Coffee & Roastery (2023 - 2024)</li>
+                            <li><strong>Barista</strong> - The Ritz Carlton Doha (2024 - present)</li>
+                        </ol>
+                    </div>
                 </div>
 
-                <div class="interest">
-                    <h3>Interest</h3>
-                    <ol>
-                        <li><strong>Web Programming</strong></li>
-                        <li><strong>Digital Marketing</strong></li>
-                    </ol>
+                <div class="about_container">
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ol>
+                            <li><strong>Barista</strong></li>
+                            <li><strong>Coffee Roasting</strong></li>
+                            <li><strong>HTML</strong></li>
+                            <li><strong>CSS</strong></li>
+                        </ol>
+                    </div>
                 </div>
+
+                <div class="about_container">
+                    <div class="interest">
+                        <h3>Interest</h3>
+                        <ol>
+                            <li><strong>Web Programming</strong></li>
+                            <li><strong>Digital Marketing</strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+                
             </div>          
         </section>
 
         <section id="project">
             <h2>Project</h2>
-            <h3><span class="project-name">Personal Website</span></h3>
-            <p>This page is my first project, which is intended to complete the milestones 1 assignment in the Software Engineer class. This project will continue to develop as the course progresses and as my skills improve</p>
+            <h3>Personal Website</h3>
+            <p>This page is my first project, created to fulfill the Milestone 1 assignment in the Software Engineer class at RevoU. It serves as a foundation upon which I intend to build and grow, reflecting my journey and progress throughout the course. As my skills and knowledge in software engineering develop, this project will continuously evolve and improve, incorporating new techniques, functionalities, and design elements. <br><br> My goal is to create a dynamic and responsive web page that not only meets the course requirements but also showcases my capabilities and dedication to learning. Stay tuned for updates and enhancements as I strive to achieve excellence in this exciting field.</p>
         </section>
+
     </main>
+
+
     
     <footer id="contact">
-        <h2>Let's Connect!</h2>
+        <h2>get in touch</h2>
+        <strong>Let's work together</strong> 
+        <hr class="shortline">
+        <p>mail.aryawibawa@gmail.com</p>
         <form action="/submit" method="POST">
-            <div>
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" placeholder="enter your full name" required>
+            <div class="form-container">
+                <label for="full-name"></label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name*" required>
             </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="your email" required>
+            <div class="form-container">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Your email*" required>
             </div>
-            <div>
-                <label for="message">Messages:</label>
-                <textarea id="message" name="message" rows="4" placeholder="write your messages here..." required></textarea>
+            <div class="form-container">
+                <label for="subject"></label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-container">
+                <label for="company"></label>
+                <input type="text" id="company" name="company" placeholder="Company name" required>
+            </div>
+            <div class="form-container">
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your messages here..." required></textarea>
             </div>
             <div class="button">
                 <button type="submit">Submit</button>
             </div>
         </form>
     </footer>
-    
 
 </body>
 
