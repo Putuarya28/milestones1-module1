@@ -75,7 +75,7 @@ Here are some details of css styling used :
 - Applied of some different font family to enchanced style using a futuristic concept
 
 ### Google Fonts
-Raleway font family is imported from Google Fonts for use throughout the website.
+Audiowide, Goldman, Syncopate and Saria font family are imported from Google Fonts for use throughout the website.
 
 ### Github Pages
 https://putuarya28.github.io/milestones1-module1/
